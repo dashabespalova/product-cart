@@ -23,7 +23,7 @@
 		});
 
 		var prodColor = $('[name="product_color"]'),
-			prodImg = $('#product_img'),
+			prodImg = $('.product_img'),
 			prodTitle = $('.ba-product__title > span');
 		prodColor.on('change', function(){
 
