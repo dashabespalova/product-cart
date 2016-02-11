@@ -23,19 +23,16 @@
 		});
 
 		var prodColor = $('[name="product_color"]'),
-			prodImg = $('.product_img'),
-			prodTitle = $('.ba-product__title > span');
+		imgBlack = $('.img-black'),
+		imgBrown = $('.img-brown');
+
 		prodColor.on('change', function(){
-
-			if (this.value === "black"){
-				prodImg.attr({'src': 'img/hp-black.png', 'alt': 'Black headphones'});
-
-				prodTitle.html("Black");
-				// prodImg.fadeIn('slow');
+			if ($(this).val() == "black"){
+				imgBlack.css('display', 'block');
+				imgBrown.css('display', 'none');
 			} else {
-				prodImg.attr({'src': 'img/hp-brown.png', 'alt': 'Brown headphones'});
-
-				prodTitle.html("Brown");
+				imgBrown.css('display', 'block');
+				imgBlack.css('display', 'none');
 			}
 		});
 	});
