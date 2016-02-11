@@ -1188,5 +1188,8 @@ input[type=radio]:checked + .ba-radio-button {
 .slick-dots button:hover {
   background-color: #536dfe;
 }
+.ba-slider__item .img-brown {
+  display: none;
+}
 
 /*# sourceMappingURL=style.css.map */
